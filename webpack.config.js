@@ -52,7 +52,7 @@ module.exports = {
     module: {
         rules: [{
                 test: /\.js$/,
-                use: ["eslint-loader"],
+                use: ["babel-loader","eslint-loader"],
                 exclude: /node_modules/,
                 enforce: 'pre'
             },
